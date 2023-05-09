@@ -32,12 +32,15 @@ blockquote {
 
 .row {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
 .pd5 {
     padding: 5px 15px;
+}
+.smref{
+    font-size: 8pt;
 }
 
 .shadow {
