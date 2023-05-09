@@ -112,7 +112,7 @@ table thead {
 }
 /* ALTERNAR COLOR DE FONDO DE CADA FILA */
 table tbody tr:nth-child(even) {
-    background-color: rgb(212, 226, 252);
+    background-color: rgba(231, 238, 250, 0.899);
 }
 
 table tbody tr:nth-child(odd) {
@@ -209,4 +209,8 @@ table tbody tr {
     & a {
         color: white;
     }
+}
+
+table tbody tr:nth-child(15){
+    background-color: rgb(248, 209, 209)!important;
 }
