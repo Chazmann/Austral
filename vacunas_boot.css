@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: gainsboro;
+    width: 100vw !important;
+
+}
+
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgba(24, 37, 170, 0.9);
+    color: white;
+    font-size: 20pt;
+    padding: 5px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    margin: 1em auto;
+    width: 96%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pd5 {
+    padding: 5px 15px;
+}
+.smref{
+    font-size: 8pt;
+}
+
+.shadow {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.158);
+}
+
+.main_container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background: rgba(24, 36, 170, 0.393);
+}
+
+.main_container::-webkit-scrollbar-thumb {
+    background: rgba(24, 36, 170, 0.8);
+    border-radius: 4px;
+}
+
+.main_container {
+    max-width: 98%;
+    height: 560px;
+    margin: 1% auto;
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+
+    & table {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        border: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+    }
+}
+
+table thead {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
+    height: 70px;
+    z-index: 1000;    
+
+    & th {
+        padding: 10px;
+        min-width: 120px;
+    }
+
+    & th:nth-child(1) {
+        position: sticky;
+        min-width: 50px;
+        background-color: rgba(116, 123, 192, 0.97);
+        color: white;
+        left: 0;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(136, 163, 217, 0.45);
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: rgba(199, 211, 236, 0.564);
+}
+
+table tbody tr {
+    height: 70px;
+
+    & td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 0;
+        background-color: rgba(116, 123, 192, 0.97);
+        color: white;
+        line-height: 18pt;
+    }
+
+    & td {
+        z-index: 0 !important;
+        padding: 2px;
+        line-height: 32px;
+
+    }
+}
+
+
+
+.action {
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    color: gray;
+    background-color: transparent;
+}
+
+.action:hover {
+   transform: scale(1.15);
+}
+
+.action:active {
+    text-shadow: 0 0 10px rgba(44, 44, 44, 0.479);
+    color: rgba(255, 255, 255, 0.814);
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    background-color: rgb(255, 54, 54);
+    color: white;
+    border-radius: 14px;
+    & button {
+        color: white;
+    }
+}
+
+.tarde {
+    background-color: yellow;
+    border-radius: 14px;
+}
+
+.disp {
+    background-color: rgb(64, 255, 137);
+    border-radius: 14px;
+}
+
+.done {
+    background-color: rgba(24, 37, 170, 0.9);
+    color: white;
+    border-radius: 14px;
+
+    & button {
+        color: white;
+    }
+}
+
+.sm {
+    font-size: 16pt !important;
+}
